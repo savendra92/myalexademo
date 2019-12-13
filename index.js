@@ -123,4 +123,4 @@ app.post('/', adapter.getRequestHandlers());
 app.get('/', (req, res) => {
     res.send({"hello" : "World"});
 });
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
